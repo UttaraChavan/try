@@ -4,7 +4,7 @@ public class Train {
 
 	private int currentStation, trackNo, traveldir, stationsToReach;
 	private final int UP = 1, DOWN = 0;
-	public boolean destReached;
+	private boolean destReached;
 	private int[] passDepart = new int[13];
 	
 	public Train(String dir){
@@ -31,6 +31,10 @@ public class Train {
 	
 	public int getTraveldir(){
 		return traveldir;
+	}
+	
+	public boolean getDestReached(){
+		return destReached;
 	}
 	
 	public void drive(int station){
